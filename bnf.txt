@@ -1,0 +1,82 @@
+LTP (Linguagem Textual em Portugues)
+
+Essa gramatica foi adaptada da seccao A13 do "The C programming language", 2a edição, de Brian W. Kernighan e Dennis M. Ritchie, Prentice Hall, 1988.
+
+<function-definition> ::= A função <nome> irá usar esses argumentos (<args>) e fazer o seguinte: {<declaração>}. O retorno dela é do tipo <tipo>;
+
+<declaration-specifier> ::= <storage-class-specifier>
+                          | <type-specifier>
+                          | <type-qualifier>
+
+
+<type-specifier> ::= nada
+                   | caracter
+                   | curto
+                   | inteiro
+                   | longo
+                   | ponto_flutuante
+                   | dobro
+                   | com_sinal
+                   | sem_sinal
+
+
+
+<logical-or-expression> ::= <logical-and-expression>
+                          | <logical-or-expression> ou_lógico <logical-and-expression>
+
+<logical-and-expression> ::= <inclusive-or-expression>
+                           | <logical-and-expression> e_lógico <inclusive-or-expression>
+
+
+<and-expression> ::= <equality-expression>
+                   | <and-expression> e <equality-expression>
+
+<equality-expression> ::= <relational-expression>
+                        | <equality-expression> igual a <relational-expression>
+                        | <equality-expression> diferente de <relational-expression>
+
+<additive-expression> ::= <multiplicative-expression>
+                        | <additive-expression> mais <multiplicative-expression>
+                        | <additive-expression> menos <multiplicative-expression>
+
+<multiplicative-expression> ::= <cast-expression>
+                              | <multiplicative-expression> vezes <cast-expression>
+                              | <multiplicative-expression> dividido por <cast-expression>
+                              | <multiplicative-expression> resto da divisão por <cast-expression>
+
+<cast-expression> ::= <unary-expression>
+                    | ( <type-name> ) <cast-expression>
+
+<unary-expression> ::= <postfix-expression>
+                     | some um a <unary-expression>
+                     | tire um de <unary-expression>
+                     | <unary-operator> <cast-expression>
+                     | tamanho de <unary-expression>
+                     | tamanho <type-name>
+
+<primary-expression> ::= <identifier>
+                       | <constant>
+                       | <string>
+                       | ( <expression> )
+
+<constant> ::= <integer-constant>
+             | <character-constant>
+             | <floating-constant>
+             | <enumeration-constant>
+
+<expression> ::= <assignment-expression>
+               | <expression> , <assignment-expression>
+
+<assignment-expression> ::= <conditional-expression>
+                          | <unary-expression> <assignment-operator> <assignment-expression>
+
+
+<expression-statement> ::= {<expression>}? ;
+
+<selection-statement> ::= se a seguinte expressão for verdadeira ( <expression> ) faça {<statement>}
+                        | se a seguinte expressão for verdadeira ( <expression> ) faça {<statement>}, se não, faça {<statement>}
+
+
+<iteration-statement> ::= enquanto a seguinte expressão for verdadeira ( <expression> ) faça {<statement>}
+
+
