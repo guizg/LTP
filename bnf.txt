@@ -2,7 +2,7 @@ LTP (Linguagem Textual em Portugues)
 
 Essa gramatica foi adaptada da seccao A13 do "The C programming language", 2a edição, de Brian W. Kernighan e Dennis M. Ritchie, Prentice Hall, 1988.
 
-<function-definition> ::= A função <nome> irá usar esses argumentos (<args>) e fazer o seguinte: {<declaração>}. O retorno dela é do tipo <tipo>;
+<function-definition> ::= A funcao <nome> ira usar esses argumentos (<args>) e fazer o seguinte {<declaração>} O retorno dela e do tipo <tipo>;
 
 <declaration-specifier> ::= <storage-class-specifier>
                           | <type-specifier>
@@ -32,8 +32,8 @@ Essa gramatica foi adaptada da seccao A13 do "The C programming language", 2a ed
                    | <and-expression> e <equality-expression>
 
 <equality-expression> ::= <relational-expression>
-                        | <equality-expression> igual a <relational-expression>
-                        | <equality-expression> diferente de <relational-expression>
+                        | <equality-expression> igual_a <relational-expression>
+                        | <equality-expression> diferente_de <relational-expression>
 
 <additive-expression> ::= <multiplicative-expression>
                         | <additive-expression> mais <multiplicative-expression>
@@ -41,17 +41,17 @@ Essa gramatica foi adaptada da seccao A13 do "The C programming language", 2a ed
 
 <multiplicative-expression> ::= <cast-expression>
                               | <multiplicative-expression> vezes <cast-expression>
-                              | <multiplicative-expression> dividido por <cast-expression>
-                              | <multiplicative-expression> resto da divisão por <cast-expression>
+                              | <multiplicative-expression> dividido_por <cast-expression>
+                              | <multiplicative-expression> resto_da_divisao_por <cast-expression>
 
 <cast-expression> ::= <unary-expression>
                     | ( <type-name> ) <cast-expression>
 
 <unary-expression> ::= <postfix-expression>
-                     | some um a <unary-expression>
-                     | tire um de <unary-expression>
+                     | some_um_a <unary-expression>
+                     | tire_um_de <unary-expression>
                      | <unary-operator> <cast-expression>
-                     | tamanho de <unary-expression>
+                     | tamanho_de <unary-expression>
                      | tamanho <type-name>
 
 <primary-expression> ::= <identifier>
