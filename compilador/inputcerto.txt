@@ -1,0 +1,38 @@
+A função sem retorno countdown recebe os argumentos (n como um inteiro) e faz:
+    se a condição {n > 0} for verdadeira, faça:
+        imprima na tela {n}
+        chame a função countdown com os argumentos(n-1)    
+    fim do condicional
+fim da função
+
+A função fibonacci, que recebe os argumentos (n como um inteiro) e retorna um inteiro, faz:
+    dimensione a variável flag como um booleano
+    coloque {falso} na variável flag
+    se a condição {n = 0} for verdadeira, faça:
+        coloque {1} na variável fibonacci
+        coloque {verdadeiro} na variável flag
+    fim do condicional
+
+    se a condição {n = 1} for verdadeira, faça:
+        coloque {1} na variável fibonacci
+        coloque {verdadeiro} na variável flag
+    fim do condicional
+
+    se a condição {flag = falso} for verdadeira, faça:
+        coloque {resultado da função fibonacci com os argumentos(n-2) + resultado da função fibonacci com os argumentos(n-1)} na variável fibonacci
+    fim do condicional
+fim da função
+
+
+A função sem retorno principal recebe os argumentos() e faz:
+    chame a função countdown com os argumentos(5)
+    imprima na tela {resultado da função fibonacci com os argumentos(5)}
+    dimensione a variável x como um inteiro
+    coloque {3} na variável x
+    enquanto a condição {x>0} for verdadeira, faça:
+        imprima na tela {321}
+        coloque {x-1} na variável x
+    fim do enquanto
+fim da função
+
+
